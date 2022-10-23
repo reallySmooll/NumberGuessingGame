@@ -29,7 +29,6 @@ namespace NumberGuessingGame
             for (int i = 1; i < rounds + 1; i++)
             {
                 int numToGuess = rand.Next(0, maxNum);
-                Console.WriteLine(numToGuess);
 
                 Console.WriteLine($"Round #{i}");
                 Console.Write("Number: ");
@@ -55,6 +54,9 @@ namespace NumberGuessingGame
             Console.WriteLine($"\nOut of {rounds} rounds, you won {roundsWon} and lost {roundsLost}.");
 
             Console.WriteLine("\nAnd that's it. Thank you for playing my first project in C#.");
+            
+            Console.Write("Press enter to exit.");
+            Console.ReadLine();
         }
     }
 }
